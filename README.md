@@ -10,7 +10,7 @@ http://www.datasciencebytes.com/bytes/2015/02/24/running-a-flask-app-on-aws-ec2/
 
 Simple Flask app to check the performance of an SQL DB using cache
 ----------------------------------------------------------------------
-The application will upload the csv contents into a table name md, but the table needs to be created first manually. The python script will call the load.sh script to load the contents into DB. The load.sh script needs to be placed in the script path.It hashes the querry to set a memcache name and the result to memcache. 
+The application will upload the csv contents into a table name md, but the table needs to be created first manually. The python script will call the load.sh script to load the contents into DB. The load.sh script needs to be placed in the script path. The load.sh script takes two parameters first parameter is the filename and second parameter is table name.It hashes the querry to set a memcache name and the result to memcache. 
 
 
 
