@@ -155,7 +155,7 @@ def upload():
     tot=end_time-start_time
     ec2_file.close()
     start_time = timeit.default_timer()
-    call('sh load.sh', shell=True)
+    call('sh load.sh fn md', shell=True)
     end_time = timeit.default_timer()
     total_time = end_time - start_time
     print 'time taken to load file into table  =  ' + str(total_time)
